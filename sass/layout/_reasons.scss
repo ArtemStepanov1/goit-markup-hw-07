@@ -1,0 +1,44 @@
+.reasons {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.reasons-list {
+    display: flex;
+}
+
+.reasons-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-bottom: 10px;
+}
+.reasons-list-item:not(:last-child){
+    margin-right: 30px;
+}
+.reasons-list-item {
+    min-height: 101px;
+    &:not(:last-child){
+        margin-right: 30px;
+    }
+}
+
+.reasons-title {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.reasons-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 3px;
+  }
