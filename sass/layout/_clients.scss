@@ -1,7 +1,7 @@
-.clients-list {
+.clients__list {
     display: flex;
     padding-bottom: 94px;
-    & .clients-item {
+    & .clients__item {
         width: 170px;
         height: 92px;
         text-align: center;
@@ -9,7 +9,7 @@
             margin-right: 30px;} 
     }
 }
-.clients-title {
+.clients__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -20,7 +20,7 @@
     padding-top: 94px;
 }
 
-.clients-link {
+.clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,6 +37,6 @@
         color: var(--accent-color);}
 }
   
-.icon-clients {
+.clients__icon {
     fill: currentColor;
 }

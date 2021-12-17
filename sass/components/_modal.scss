@@ -50,7 +50,7 @@
     }
 }
   
-.modal-close-icon {
+.modal-close__icon {
     fill: currentColor;
 }
   
@@ -60,7 +60,7 @@
     pointer-events: none;
 }
 
-.modal-title {
+.modal__title {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -68,7 +68,7 @@
     letter-spacing: 0.03em;
     padding-bottom: 12px;
 }
-.modal-field{
+.modal-form__field{
     margin-bottom: 10px;
 }
 
@@ -76,7 +76,7 @@
     position: relative;
 }
 
-.input-icon {
+.input-wrap__icon {
     position: absolute;
     left: 12px;
     top: 50%;
@@ -84,7 +84,7 @@
     transition: fill 250ms linear ;
 }
 
-.modal-text-input {
+.input-wrap__text {
     width: 100%;
     min-height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -99,13 +99,13 @@
     &:focus {
         border-color: var(--accent-color);
     }
-    &:hover + .input-icon,
-    &:focus + .input-icon {
+    &:hover + .input-wrap__icon,
+    &:focus + .input-wrap__icon {
         fill: var(--accent-color);
     }
 }
 
-.form-input-text {
+.modal-form__input-text {
     font-size: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;  
@@ -113,7 +113,7 @@
     margin-bottom: 4px;
 }
 
-.modal-form-text{
+.modal-textarea__text{
     width: 100%;
     min-height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -127,19 +127,19 @@
     &:focus {
         border-color: var(--accent-color);
     }
+    &::placeholder {
+        font-size: 14px;
+        line-height: 1.16;
+        letter-spacing: 0.01em;  
+        color: rgba(117, 117, 117, 0.5);
+    }
 }
 
-.modal-form-text::placeholder {
-    font-size: 14px;
-    line-height: 1.16;
-    letter-spacing: 0.01em;  
-    color: rgba(117, 117, 117, 0.5);
-}
-.modal-textarea {
+.modal__textarea {
     margin-bottom: 20px;
 }
 
-.check-item {
+.policy__check-item {
     width: 16px;
     height: 15px;
     border: 2px solid #000000;
@@ -150,12 +150,13 @@
     justify-content: center;
 }
 
-.modal-check:checked + .modal-policy .check-item {
+.policy__check{
+    &:checked + .policy__label .policy__check-item {
     background-color: var(--accent-color);
-    border: none;
+    border: none;}
 }
 
-.modal-policy {
+.policy__label {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -165,13 +166,13 @@
     color: var(--main-text-color);
 }
 
-.policy-link {
+.policy__link {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--accent-color);
 }
 
-.modal-submit-btn{
+.modal__submit-btn {
     margin: 30px auto 0;
 }

@@ -1,15 +1,15 @@
-.about {
+.about__container {
     padding-bottom: 94px;
 }
-.about-list {
+.about__list {
     display: flex;
 }
     
-.about-list-item:not(:last-child) {
+.about__item:not(:last-child) {
     margin-right: 30px;  
 }
 
-.about-item {
+.about__title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -19,11 +19,11 @@
     margin-bottom: 50px;
 }
 
-.about-list-item-wrap {
+.about__wrap {
     position: relative;
 }
 
-.about-list-item-description {
+.about__description {
     position: absolute;
     bottom: 0;
     background: rgba(47, 48, 58, 0.8);

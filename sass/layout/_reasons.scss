@@ -1,12 +1,12 @@
-.reasons {
+.reasons__container {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-.reasons-list {
+.reasons__list {
     display: flex;
 }
 
-.reasons-item {
+.reasons__title {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
@@ -16,24 +16,24 @@
     color: var(--main-title-color);
     margin-bottom: 10px;
 }
-.reasons-list-item:not(:last-child){
+.reasons__item:not(:last-child){
     margin-right: 30px;
 }
-.reasons-list-item {
+.reasons__item {
     min-height: 101px;
     &:not(:last-child){
         margin-right: 30px;
     }
 }
 
-.reasons-title {
+.reasons__text {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
 
-.reasons-icon {
+.reasons__icon {
     display: flex;
     justify-content: center;
     align-items: center;
